@@ -1,0 +1,21 @@
+
+在app gradle dependencies中添加
+
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+如果是androidX
+
+ implementation 'com.jakewharton:butterknife:10.2.1'
+ annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+在Android 内部添加
+
+compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+在project的 dependencies中
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
